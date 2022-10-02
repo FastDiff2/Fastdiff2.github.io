@@ -172,3 +172,73 @@ FastDiff, as a class of denoising probabilistic models, has recently achieved im
 		</tr>
 	</tbody>
 </table>
+
+
+
+## Ablation Study
+
+<ruby>Text: in being comparatively modern.</ruby>
+<table>
+	<thead>
+		<tr>
+			<th style="text-align: center">FastDiff 2 (Diff-GAN)</th>
+            <th style="text-align: center">w/o Diffusion Reparameterization</th>
+            <th style="text-align: center">w/o Reconstruction Objective</th>
+            <th style="text-align: center">FastDiff 2 (GAN-Diff)</th>
+            <th style="text-align: center">w/o Reconstruction Objective</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Ablation/diffgan/001.wav" type="audio/wav"></audio></td>
+			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Ablation/diffgan_w_o_DR/001.wav" type="audio/wav"></audio></td>
+            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Ablation/diffgan_w_o_RB/001.wav" type="audio/wav"></audio></td>
+			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Ablation/gandiff/001.wav" type="audio/wav"></audio></td>
+            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Ablation/gandiff_w_o_DR/001.wav" type="audio/wav"></audio></td>
+		</tr>
+	</tbody>
+</table>
+
+<ruby>Text: it is of the first importance that the letter used should be fine in form.</ruby>
+<table>
+	<thead>
+		<tr>
+			<th style="text-align: center">FastDiff 2 (Diff-GAN)</th>
+            <th style="text-align: center">w/o Diffusion Reparameterization</th>
+            <th style="text-align: center">w/o Reconstruction Objective</th>
+            <th style="text-align: center">FastDiff 2 (GAN-Diff)</th>
+            <th style="text-align: center">w/o Reconstruction Objective</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Ablation/diffgan/002.wav" type="audio/wav"></audio></td>
+			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Ablation/diffgan_w_o_DR/002.wav" type="audio/wav"></audio></td>
+            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Ablation/diffgan_w_o_RB/002.wav" type="audio/wav"></audio></td>
+			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Ablation/gandiff/002.wav" type="audio/wav"></audio></td>
+            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Ablation/gandiff_w_o_DR/002.wav" type="audio/wav"></audio></td>
+		</tr>
+	</tbody>
+</table>
+
+<ruby>Text: the middle ages brought calligraphy to perfection , and it was natural therefore.</ruby>
+<table>
+	<thead>
+		<tr>
+			<th style="text-align: center">FastDiff 2 (Diff-GAN)</th>
+            <th style="text-align: center">w/o Diffusion Reparameterization</th>
+            <th style="text-align: center">w/o Reconstruction Objective</th>
+            <th style="text-align: center">FastDiff 2 (GAN-Diff)</th>
+            <th style="text-align: center">w/o Reconstruction Objective</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Ablation/diffgan/003.wav" type="audio/wav"></audio></td>
+			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Ablation/diffgan_w_o_DR/003.wav" type="audio/wav"></audio></td>
+            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Ablation/diffgan_w_o_RB/003.wav" type="audio/wav"></audio></td>
+			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Ablation/gandiff/003.wav" type="audio/wav"></audio></td>
+            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Ablation/gandiff_w_o_DR/003.wav" type="audio/wav"></audio></td>
+		</tr>
+	</tbody>
+</table>
