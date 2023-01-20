@@ -40,7 +40,7 @@
 	</tbody>
 </table>
 
-<ruby>Text: it is of the first importance that the letter used should be fine in form.</ruby>
+<ruby>Text: the earliest book printed with movable types, the gutenberg, or forty two line.</ruby>
 <table>
 	<thead>
 		<tr>
@@ -58,16 +58,16 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/GT/002.wav" type="audio/wav"></audio></td>
-			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/WaveNet/002.wav" type="audio/wav"></audio></td>
-            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/WaveGlow/002.wav" type="audio/wav"></audio></td>
-			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/HIFIGAN/002.wav" type="audio/wav"></audio></td>
-            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/UnivNet/002.wav" type="audio/wav"></audio></td>
-			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/Diffwave/002.wav" type="audio/wav"></audio></td>
-            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/WaveGrad/002.wav" type="audio/wav"></audio></td>
-            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/FastDiff/002.wav" type="audio/wav"></audio></td>
-            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/diffusion_leverage_GAN/002.wav" type="audio/wav"></audio></td>
-            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/GAN_leverage_diffusion/002.wav" type="audio/wav"></audio></td>
+			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/GT/005.wav" type="audio/wav"></audio></td>
+			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/WaveNet/005.wav" type="audio/wav"></audio></td>
+            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/WaveGlow/005.wav" type="audio/wav"></audio></td>
+			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/HIFIGAN/005.wav" type="audio/wav"></audio></td>
+            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/UnivNet/005.wav" type="audio/wav"></audio></td>
+			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/Diffwave/005.wav" type="audio/wav"></audio></td>
+            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/WaveGrad/005.wav" type="audio/wav"></audio></td>
+            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/FastDiff/005.wav" type="audio/wav"></audio></td>
+            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/diffusion_leverage_GAN/005.wav" type="audio/wav"></audio></td>
+            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Comparision/GAN_leverage_diffusion/005.wav" type="audio/wav"></audio></td>
 		</tr>
 	</tbody>
 </table>
@@ -124,16 +124,16 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/GT/001.wav" type="audio/wav"></audio></td>
-			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/WaveNet/001.wav" type="audio/wav"></audio></td>
-            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/WaveGlow/001.wav" type="audio/wav"></audio></td>
-			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/HIFIGAN/001.wav" type="audio/wav"></audio></td>
-            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/UnivNet/001.wav" type="audio/wav"></audio></td>
-			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/Diffwave/001.wav" type="audio/wav"></audio></td>
-            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/WaveGrad/001.wav" type="audio/wav"></audio></td>
-            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/FastDiff/001.wav" type="audio/wav"></audio></td>
-            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/Diffusion_leverage_GAN/001.wav" type="audio/wav"></audio></td>
-            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/GAN_leverage_diffusion/001.wav" type="audio/wav"></audio></td>
+			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/GT/003.wav" type="audio/wav"></audio></td>
+			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/WaveNet/003.wav" type="audio/wav"></audio></td>
+            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/WaveGlow/003.wav" type="audio/wav"></audio></td>
+			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/HIFIGAN/003.wav" type="audio/wav"></audio></td>
+            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/UnivNet/003.wav" type="audio/wav"></audio></td>
+			<td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/Diffwave/003.wav" type="audio/wav"></audio></td>
+            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/WaveGrad/003.wav" type="audio/wav"></audio></td>
+            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/FastDiff/003.wav" type="audio/wav"></audio></td>
+            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/Diffusion_leverage_GAN/003.wav" type="audio/wav"></audio></td>
+            <td style="text-align: center"><audio controls style="width: 150px;"><source src="wavs/Generalization/GAN_leverage_diffusion/003.wav" type="audio/wav"></audio></td>
 		</tr>
 	</tbody>
 </table>
