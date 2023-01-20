@@ -5,8 +5,7 @@
 {:toc}
 ## Abstract
 
-FastDiff, as a class of denoising probabilistic models, has recently achieved impressive performances in speech synthesis. It utilizes a noise predictor to learn a tight inference schedule for skipping denoising steps. Despite the successful speedup of FastDiff, there is still room for improvements, e.g., further optimizing the speed-quality trade-off and accelerating DDPMs training procedures. After analyzing GANs and diffusion models in conditional speech synthesis, we find that: GANs produce samples but do not cover the whole distribution, and the coverage degree does not distinctly impact audio quality. Inspired by these observations, we propose to trade off diversity for quality and speed by incorporating GANs into diffusion models, introducing two GAN-empowered modeling perspectives: (1) FastDiff 2 (Diff-GAN), whose denoising distribution is parametrized by conditional GANs; and (2) FastDiff 2 (GAN-Diff), in which the denoising model is treated as a generator in GAN for adversarial training. Unlike the acceleration methods based on skipping the denoising steps, FastDiff 2 provides a principled way to speed up both the training and inference processes. Experimental results demonstrate that both variants of FastDiff 2 enjoy an efficient 4-step sampling process as in FastDiff yet demonstrate a superior sample quality.
-
+  Generative adversarial networks and denoising probabilistic models have recently achieved impressive performances in image and audio synthesis. After revisiting their success in conditional speech synthesis, we find that 1) GANs sacrifice sample diversity for quality and speed, 2) diffusion models exhibit outperformed sample quality and diversity while requiring a large number of iterative refinements. Achieving high-quality and diverse speech synthesis at a low computational cost has become an open problem for all neural synthesizers. In this work, we propose to converge advantages from GANs and diffusion models by incorporating both classes, introducing dual-empowered modeling perspectives: 1) DiffGAN-Wave, a diffusion model whose denoising process is parametrized by conditional GANs, and the non-Gaussian denoising distribution makes it much more stable to implement the reverse process with large steps sizes; and 2) GANDiff-Wave, a generative adversarial network whose forward process is constructed by multiple denoising diffusion iterations, which exhibits better sample diversity than traditional GANs. Experimental results show that both variants enjoy an efficient 4-step sampling process and demonstrate superior sample quality and diversity. Audio samples are available at https://RevisitSpeech.github.io
 ## Comparison with other models
 
 <ruby>Text: in being comparatively modern.</ruby>
@@ -21,8 +20,8 @@ FastDiff, as a class of denoising probabilistic models, has recently achieved im
 			<th style="text-align: center">Diffwave</th>
 			<th style="text-align: center">WaveGrad</th>
             <th style="text-align: center">FastDiff</th>
-			<th style="text-align: center">FastDiff 2 (Diff-GAN)</th>
-            <th style="text-align: center">FastDiff 2 (GAN-Diff)</th>
+			<th style="text-align: center">DiffGAN-Wave</th>
+            <th style="text-align: center">GANDiff-Wave</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -53,8 +52,8 @@ FastDiff, as a class of denoising probabilistic models, has recently achieved im
 			<th style="text-align: center">Diffwave</th>
 			<th style="text-align: center">WaveGrad</th>
             <th style="text-align: center">FastDiff</th>
-			<th style="text-align: center">FastDiff 2 (Diff-GAN)</th>
-            <th style="text-align: center">FastDiff 2 (GAN-Diff)</th>
+			<th style="text-align: center">DiffGAN-Wave</th>
+            <th style="text-align: center">GANDiff-Wave</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -85,8 +84,8 @@ FastDiff, as a class of denoising probabilistic models, has recently achieved im
 			<th style="text-align: center">Diffwave</th>
 			<th style="text-align: center">WaveGrad</th>
             <th style="text-align: center">FastDiff</th>
-			<th style="text-align: center">FastDiff 2 (Diff-GAN)</th>
-            <th style="text-align: center">FastDiff 2 (GAN-Diff)</th>
+			<th style="text-align: center">DiffGAN-Wave</th>
+            <th style="text-align: center">GANDiff-Wave</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -119,8 +118,8 @@ FastDiff, as a class of denoising probabilistic models, has recently achieved im
 			<th style="text-align: center">Diffwave</th>
 			<th style="text-align: center">WaveGrad</th>
             <th style="text-align: center">FastDiff</th>
-			<th style="text-align: center">FastDiff 2 (Diff-GAN)</th>
-            <th style="text-align: center">FastDiff 2 (GAN-Diff)</th>
+			<th style="text-align: center">DiffGAN-Wave</th>
+            <th style="text-align: center">GANDiff-Wave</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -153,8 +152,8 @@ FastDiff, as a class of denoising probabilistic models, has recently achieved im
 			<th style="text-align: center">Diffwave</th>
 			<th style="text-align: center">WaveGrad</th>
             <th style="text-align: center">FastDiff</th>
-			<th style="text-align: center">FastDiff 2 (Diff-GAN)</th>
-            <th style="text-align: center">FastDiff 2 (GAN-Diff)</th>
+			<th style="text-align: center">DiffGAN-Wave</th>
+            <th style="text-align: center">GANDiff-Wave</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -181,10 +180,10 @@ FastDiff, as a class of denoising probabilistic models, has recently achieved im
 <table>
 	<thead>
 		<tr>
-			<th style="text-align: center">FastDiff 2 (Diff-GAN)</th>
+			<th style="text-align: center">DiffGAN-Wave</th>
             <th style="text-align: center">w/o Diffusion Reparameterization</th>
             <th style="text-align: center">w/o Reconstruction Objective</th>
-            <th style="text-align: center">FastDiff 2 (GAN-Diff)</th>
+            <th style="text-align: center">GANDiff-Wave</th>
             <th style="text-align: center">w/o Reconstruction Objective</th>
 		</tr>
 	</thead>
@@ -203,10 +202,10 @@ FastDiff, as a class of denoising probabilistic models, has recently achieved im
 <table>
 	<thead>
 		<tr>
-			<th style="text-align: center">FastDiff 2 (Diff-GAN)</th>
+			<th style="text-align: center">DiffGAN-Wave</th>
             <th style="text-align: center">w/o Diffusion Reparameterization</th>
             <th style="text-align: center">w/o Reconstruction Objective</th>
-            <th style="text-align: center">FastDiff 2 (GAN-Diff)</th>
+            <th style="text-align: center">GANDiff-Wave</th>
             <th style="text-align: center">w/o Reconstruction Objective</th>
 		</tr>
 	</thead>
@@ -225,10 +224,10 @@ FastDiff, as a class of denoising probabilistic models, has recently achieved im
 <table>
 	<thead>
 		<tr>
-			<th style="text-align: center">FastDiff 2 (Diff-GAN)</th>
+			<th style="text-align: center">DiffGAN-Wave</th>
             <th style="text-align: center">w/o Diffusion Reparameterization</th>
             <th style="text-align: center">w/o Reconstruction Objective</th>
-            <th style="text-align: center">FastDiff 2 (GAN-Diff)</th>
+            <th style="text-align: center">GANDiff-Wave</th>
             <th style="text-align: center">w/o Reconstruction Objective</th>
 		</tr>
 	</thead>
